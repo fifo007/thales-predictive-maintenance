@@ -23,7 +23,7 @@ The application expects `Thales_Group_Manufacturing.csv` next to `app.py`.
 
 ## Methodology
 
-The workflow establishes rolling median sensor baselines per machine, engineers normalized deviations and error trends, and scores rare multivariate patterns with an Isolation Forest. Scores are normalized to 0-100 and classified as Low, Medium, or High risk. See `deliverables/` for the research paper and executive summary.
+The workflow establishes rolling median sensor baselines per machine, engineers normalized deviations and error trends, and scores rare multivariate patterns with an Isolation Forest. Scores are normalized to 0-100 and classified as Low, Medium, or High risk. See `deliverables/` for the IEEE-style research paper and executive summary. Run `build_ieee_paper.py` to regenerate the research paper from the dataset.
 
 ## Repository layout
 
@@ -31,5 +31,6 @@ The workflow establishes rolling median sensor baselines per machine, engineers 
 app.py                         Streamlit dashboard
 Thales_Group_Manufacturing.csv Uploaded telemetry dataset
 deliverables/                  Research paper and stakeholder summary
+build_ieee_paper.py            IEEE-style paper generator
 requirements.txt               Runtime dependencies
 ```
